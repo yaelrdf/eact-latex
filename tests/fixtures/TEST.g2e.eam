@@ -1,0 +1,47 @@
+g2eTEST==Texto plano==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra nisi in laoreet consectetur. Curabitur felis nulla, dignissim sed aliquet. 
+
+
+==Common math expressions==
+\sqrt{a}
+\frac{a}{b}
+_{a}
+^{a}
+\sum{n}{k}{0}{a}
+\mat{a&b}{c&d}{e&f}
+\log{a}{b}
+\abs{a}
+\diff{a}{b}
+\diff2{a}{b}
+\int{a}{b}{c}
+\note{title}{content}
+
+==Math Simbosls==
++−×÷≤≠≥⇒±∓′″\i;∞\s10;\sE;\xbar;\ybar;\xcirc;\ycirc;\pcirc;≒≈≡≢≅~∝∫∬∮∂∡
+∈∋⊆⊂⊃∪∩∉⊈⊉⊄⊅∅∃∟∨∧∀⊕⊖⊗⊘⊥⇔∥∦\sslash;∇∴∵√|
+⁰¹²³⁴⁵⁶⁷⁸⁹\supm1;⁺⁻˟\supr3;₀₁₂₃₄₅₆₇₈₉\subm1;₊₋\subs0;\subs1;\subs2;\subsn;
+
+==Misc==
+/\^`{|}~\asterisk;←→↑↓⥊⥌↖↗↘↙◀▶▲▼▸▹※【】○●□■◇◆☒￭
+¡¿€ƒ…‘’“”¢\serifE;£¤¥§©ª¬®º«»▫˟·\negB;\negR;\negL;\negEq;\negLe;\negGr;\negLE;\negGE;\lgComma;
+\bolde;\boldP;\boldr;\boldX;\boldY;\hookn;\hookM;\serifG;\serifP;\serifE;◢↲\supsquare;∠\supr;⇒\serifr;\seCorner;\supg;
+
+==Subscriptions==
+_A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P_Q_R_S_T_U_V_W_X_Y_Z₀₁₂₃₄₅₆₇₈₉
+_a_b_c_d_e_f_g_h_i_j_k_l_m_n_o_p_q_r_s_t_u_v_w_x_y_z\seCorner;\subm1;₊₋\subsn;\subs0;\subs1;\subs2;
+
+
+==Greek==
+ΑΒΓΔΕΖΗΘΙΘΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+αβγδεζηθικλμνξοπρσςτυφχψω
+
+==Latin==
+ÀÁÂÃÄÅĂĄÆÇĆČĎÐÈÉÊËĘĚÌÍÎÏŁŃŇ
+ÑŒŐÒÓÔÕÖØŘŚŠŤŮŰÙÚÛÜÝŸŹŻŽÞ
+àáâãäåăąæçćčďðèéêëęěìíîïłńň
+ñœőòóôõøřśšťůűùúûüýÿźżžþß
+
+==Cyrillic==
+АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄ
+абвгдеёжжзийклмнопрстуфхцчшщъыьэюяє

@@ -1,0 +1,8 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# build outputs of the examples (fixtures live in tests/fixtures)
+examples/*.g2e
+examples/*.g1e

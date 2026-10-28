@@ -1,0 +1,3506 @@
+[
+ {
+  "kind": "char",
+  "input": "+",
+  "func": "plus",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "−",
+  "func": "minus",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "×",
+  "func": "times",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "÷",
+  "func": "divide",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≤",
+  "func": "le",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≠",
+  "func": "ne",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≥",
+  "func": "ge",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⇒",
+  "func": "RArr",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "±",
+  "func": "pm",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∓",
+  "func": "mp",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "′",
+  "func": "prime",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "″",
+  "func": "Prime",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\i;",
+  "func": "i",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∞",
+  "func": "infty",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\s10;",
+  "func": "s10",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\sE;",
+  "func": "sE",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\xbar;",
+  "func": "xbar",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\ybar;",
+  "func": "ybar",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\xcirc;",
+  "func": "xcirc",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\ycirc;",
+  "func": "ycirc",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\pcirc;",
+  "func": "pcirc",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≒",
+  "func": "approxorimg",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≈",
+  "func": "approx",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≡",
+  "func": "equiv",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≢",
+  "func": "notequiv",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "≅",
+  "func": "cong",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "~",
+  "func": "tilde",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∝",
+  "func": "prop",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∫",
+  "func": "int",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∬",
+  "func": "iint",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∮",
+  "func": "oint",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∂",
+  "func": "partial",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∡",
+  "func": "measuredangle",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∈",
+  "func": "in",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∋",
+  "func": "ni",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊆",
+  "func": "sube",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊇",
+  "func": "supe",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊂",
+  "func": "sub",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊃",
+  "func": "sup",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∪",
+  "func": "cup",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∩",
+  "func": "cap",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∉",
+  "func": "notin",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∌",
+  "func": "notni",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊈",
+  "func": "notsube",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊉",
+  "func": "notsupe",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊄",
+  "func": "notsub",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊅",
+  "func": "notsup",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∅",
+  "func": "empty",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∃",
+  "func": "exist",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∟",
+  "func": "rightangle",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∨",
+  "func": "vee",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∧",
+  "func": "wedge",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∀",
+  "func": "forall",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊕",
+  "func": "oplus",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊖",
+  "func": "ominus",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊗",
+  "func": "otimes",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊘",
+  "func": "oslash",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⊥",
+  "func": "perp",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⇔",
+  "func": "LRArr",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∥",
+  "func": "paral",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∦",
+  "func": "notparal",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\sslash;",
+  "func": "sslash",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∇",
+  "func": "nabla",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∴",
+  "func": "therefore",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "∵",
+  "func": "because",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "√",
+  "func": "sqrt",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "|",
+  "func": "vbar",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁰",
+  "func": "sup0",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "¹",
+  "func": "sup1",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "²",
+  "func": "sup2",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "³",
+  "func": "sup3",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁴",
+  "func": "sup4",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁵",
+  "func": "sup5",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁶",
+  "func": "sup6",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁷",
+  "func": "sup7",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁸",
+  "func": "sup8",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁹",
+  "func": "sup9",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\supm1;",
+  "func": "supm1",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁺",
+  "func": "supp",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "⁻",
+  "func": "supm",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "˟",
+  "func": "supx",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\supr3;",
+  "func": "supr3",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₀",
+  "func": "_0",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₁",
+  "func": "_1",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₂",
+  "func": "_2",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₃",
+  "func": "_3",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₄",
+  "func": "_4",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₅",
+  "func": "_5",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₆",
+  "func": "_6",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₇",
+  "func": "_7",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₈",
+  "func": "_8",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₉",
+  "func": "_9",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\subm1;",
+  "func": "subm1",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₊",
+  "func": "subpl",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "₋",
+  "func": "submi",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\subs0;",
+  "func": "subs0",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\subs1;",
+  "func": "subs1",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\subs2;",
+  "func": "subs2",
+  "category": "math"
+ },
+ {
+  "kind": "func",
+  "input": "\\subsn;",
+  "func": "subsn",
+  "category": "math"
+ },
+ {
+  "kind": "char",
+  "input": "/",
+  "func": "slash",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "\\",
+  "func": "bslash",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "\\^",
+  "func": "circ",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "`",
+  "func": "grave",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "{",
+  "func": "lBrace",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "|",
+  "func": "vline",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "}",
+  "func": "rBrace",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "~",
+  "func": "tilde",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\asterisk;",
+  "func": "asterisk",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "←",
+  "func": "lArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "→",
+  "func": "rArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↑",
+  "func": "uArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↓",
+  "func": "dArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "⥊",
+  "func": "lrHarp",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "⥌",
+  "func": "UDHarp",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↖",
+  "func": "nwArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↗",
+  "func": "neArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↘",
+  "func": "seArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↙",
+  "func": "swArr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "◀",
+  "func": "LTriangle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "▶",
+  "func": "RTriangle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "▲",
+  "func": "UTriangle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "▼",
+  "func": "DTriangle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "▸",
+  "func": "rTriangle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "▹",
+  "func": "rwTriangle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "※",
+  "func": "refMark",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "【",
+  "func": "lLenti",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "】",
+  "func": "rLenti",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "○",
+  "func": "Circle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "●",
+  "func": "bkCircle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "□",
+  "func": "Square",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "■",
+  "func": "bkSquare",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "◇",
+  "func": "Diam",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "◆",
+  "func": "bkDiam",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "☒",
+  "func": "ballotX",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "￭",
+  "func": "bullet",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "¡",
+  "func": "iexcl",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "¿",
+  "func": "iquest",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "€",
+  "func": "euro",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "ƒ",
+  "func": "func",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "…",
+  "func": "dots",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "‘",
+  "func": "lsquo",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "’",
+  "func": "rsquo",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "“",
+  "func": "ldquo",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "”",
+  "func": "rdquo",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "¢",
+  "func": "cent",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "£",
+  "func": "pound",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "¤",
+  "func": "curren",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "¥",
+  "func": "yen",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "§",
+  "func": "sect",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "©",
+  "func": "copy",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "ª",
+  "func": "ordf",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "¬",
+  "func": "not",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "®",
+  "func": "reg",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "º",
+  "func": "ordm",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "«",
+  "func": "laquo",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "»",
+  "func": "raquo",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "▫",
+  "func": "ssquare",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "˟",
+  "func": "scross",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "·",
+  "func": "spoint",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negB;",
+  "func": "negB",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negR;",
+  "func": "negR",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negL;",
+  "func": "negL",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negEq;",
+  "func": "negEq",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negLe;",
+  "func": "negLe",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negGr;",
+  "func": "negGr",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negLE;",
+  "func": "negLE",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\negGE;",
+  "func": "negGE",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\lgComma;",
+  "func": "lgComma",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\bolde;",
+  "func": "bolde",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\boldP;",
+  "func": "boldP",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\boldr;",
+  "func": "boldr",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\boldX;",
+  "func": "boldX",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\boldY;",
+  "func": "boldY",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\hookn;",
+  "func": "hookn",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\hookM;",
+  "func": "hookM",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\serifG;",
+  "func": "serifG",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\serifT;",
+  "func": "serifT",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\serifP;",
+  "func": "serifP",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\serifE;",
+  "func": "serifE",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "◢",
+  "func": "disp",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "↲",
+  "func": "retArr",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\hyphen;",
+  "func": "hyphen",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\supsquare;",
+  "func": "supsquare",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "°",
+  "func": "supcircle",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "∠",
+  "func": "angle",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\supr;",
+  "func": "supr",
+  "category": "misc"
+ },
+ {
+  "kind": "char",
+  "input": "⇒",
+  "func": "RArr",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\serifr;",
+  "func": "serifr",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\seCorner;",
+  "func": "seCorner",
+  "category": "misc"
+ },
+ {
+  "kind": "func",
+  "input": "\\supg;",
+  "func": "supg",
+  "category": "misc"
+ },
+ {
+  "kind": "sub",
+  "input": "_A",
+  "func": "_A",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_B",
+  "func": "_B",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_C",
+  "func": "_C",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_D",
+  "func": "_D",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_E",
+  "func": "_E",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_F",
+  "func": "_F",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_G",
+  "func": "_G",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_H",
+  "func": "_H",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_I",
+  "func": "_I",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_J",
+  "func": "_J",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_K",
+  "func": "_K",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_L",
+  "func": "_L",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_M",
+  "func": "_M",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_N",
+  "func": "_N",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_O",
+  "func": "_O",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_P",
+  "func": "_P",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_Q",
+  "func": "_Q",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_R",
+  "func": "_R",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_S",
+  "func": "_S",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_T",
+  "func": "_T",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_U",
+  "func": "_U",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_V",
+  "func": "_V",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_W",
+  "func": "_W",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_X",
+  "func": "_X",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_Y",
+  "func": "_Y",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_Z",
+  "func": "_Z",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₀",
+  "func": "_0",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₁",
+  "func": "_1",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₂",
+  "func": "_2",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₃",
+  "func": "_3",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₄",
+  "func": "_4",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₅",
+  "func": "_5",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₆",
+  "func": "_6",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₇",
+  "func": "_7",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₈",
+  "func": "_8",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₉",
+  "func": "_9",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_a",
+  "func": "_a",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_b",
+  "func": "_b",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_c",
+  "func": "_c",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_d",
+  "func": "_d",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_e",
+  "func": "_e",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_f",
+  "func": "_f",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_g",
+  "func": "_g",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_h",
+  "func": "_h",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_i",
+  "func": "_i",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_j",
+  "func": "_j",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_k",
+  "func": "_k",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_l",
+  "func": "_l",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_m",
+  "func": "_m",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_n",
+  "func": "_n",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_o",
+  "func": "_o",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_p",
+  "func": "_p",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_q",
+  "func": "_q",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_r",
+  "func": "_r",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_s",
+  "func": "_s",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_t",
+  "func": "_t",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_u",
+  "func": "_u",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_v",
+  "func": "_v",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_w",
+  "func": "_w",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_x",
+  "func": "_x",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_y",
+  "func": "_y",
+  "category": "subscript"
+ },
+ {
+  "kind": "sub",
+  "input": "_z",
+  "func": "_z",
+  "category": "subscript"
+ },
+ {
+  "kind": "func",
+  "input": "\\seCorner;",
+  "func": "seCorner",
+  "category": "subscript"
+ },
+ {
+  "kind": "func",
+  "input": "\\subm1;",
+  "func": "subm1",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₊",
+  "func": "subpl",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "₋",
+  "func": "submi",
+  "category": "subscript"
+ },
+ {
+  "kind": "func",
+  "input": "\\subsn;",
+  "func": "subsn",
+  "category": "subscript"
+ },
+ {
+  "kind": "func",
+  "input": "\\subs0;",
+  "func": "subs0",
+  "category": "subscript"
+ },
+ {
+  "kind": "func",
+  "input": "\\subs1;",
+  "func": "subs1",
+  "category": "subscript"
+ },
+ {
+  "kind": "func",
+  "input": "\\subs2;",
+  "func": "subs2",
+  "category": "subscript"
+ },
+ {
+  "kind": "char",
+  "input": "Α",
+  "func": "Alpha",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Β",
+  "func": "Beta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Γ",
+  "func": "Gamma",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Δ",
+  "func": "Delta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ε",
+  "func": "Epsilon",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ζ",
+  "func": "Zeta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Η",
+  "func": "Eta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Θ",
+  "func": "Theta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ι",
+  "func": "Iota",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Κ",
+  "func": "Kappa",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Λ",
+  "func": "Lambda",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Μ",
+  "func": "Mu",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ν",
+  "func": "Nu",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ξ",
+  "func": "Xi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ο",
+  "func": "Omicron",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Π",
+  "func": "Pi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ρ",
+  "func": "Rho",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Σ",
+  "func": "Sigma",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Τ",
+  "func": "Tau",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Υ",
+  "func": "Upsilon",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Φ",
+  "func": "Phi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Χ",
+  "func": "Chi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ψ",
+  "func": "Psi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "Ω",
+  "func": "Omega",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "α",
+  "func": "alpha",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "β",
+  "func": "beta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "γ",
+  "func": "gamma",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "δ",
+  "func": "delta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ε",
+  "func": "epsilon",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ζ",
+  "func": "zeta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "η",
+  "func": "eta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "θ",
+  "func": "theta",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ι",
+  "func": "iota",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "κ",
+  "func": "kappa",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "λ",
+  "func": "lambda",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "μ",
+  "func": "mu",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ν",
+  "func": "nu",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ξ",
+  "func": "xi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ο",
+  "func": "omicron",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "π",
+  "func": "pi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ρ",
+  "func": "rho",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "σ",
+  "func": "sigma",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ς",
+  "func": "sigmaf",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "τ",
+  "func": "tau",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "υ",
+  "func": "upsilon",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "φ",
+  "func": "phi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "χ",
+  "func": "chi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ψ",
+  "func": "psi",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "ω",
+  "func": "omega",
+  "category": "greek"
+ },
+ {
+  "kind": "char",
+  "input": "À",
+  "func": "Agrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Á",
+  "func": "Aacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Â",
+  "func": "Acirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ã",
+  "func": "Atilde",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ä",
+  "func": "Auml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Å",
+  "func": "Aring",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ă",
+  "func": "Abreve",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ą",
+  "func": "Aogon",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Æ",
+  "func": "AElig",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ç",
+  "func": "Ccedil",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ć",
+  "func": "Cacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Č",
+  "func": "Ccaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ď",
+  "func": "Dcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ð",
+  "func": "Eth",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "È",
+  "func": "Egrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "É",
+  "func": "Eacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ê",
+  "func": "Ecirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ë",
+  "func": "Euml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ę",
+  "func": "Eogon",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ě",
+  "func": "Ecaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ì",
+  "func": "Igrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Í",
+  "func": "Iacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Î",
+  "func": "Icirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ï",
+  "func": "Iuml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ł",
+  "func": "Lstrok",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ń",
+  "func": "Nacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ň",
+  "func": "Ncaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ñ",
+  "func": "Ntilde",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Œ",
+  "func": "OElig",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ő",
+  "func": "Odblac",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ò",
+  "func": "Ograve",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ó",
+  "func": "Oacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ô",
+  "func": "Ocirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Õ",
+  "func": "Otilde",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ö",
+  "func": "Ouml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ø",
+  "func": "Oslash",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ř",
+  "func": "Rcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ś",
+  "func": "Sacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Š",
+  "func": "Scaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ť",
+  "func": "Tcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ů",
+  "func": "Uring",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ű",
+  "func": "Udblac",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ù",
+  "func": "Ugrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ú",
+  "func": "Uacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Û",
+  "func": "Ucirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ü",
+  "func": "Uuml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ý",
+  "func": "Yacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ÿ",
+  "func": "Yuml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ź",
+  "func": "Zacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ż",
+  "func": "Zdot",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Ž",
+  "func": "Zcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "Þ",
+  "func": "Thorn",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "à",
+  "func": "agrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "á",
+  "func": "aacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "â",
+  "func": "acirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ã",
+  "func": "atilde",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ä",
+  "func": "auml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "å",
+  "func": "aring",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ă",
+  "func": "abreve",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ą",
+  "func": "aogon",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "æ",
+  "func": "aelig",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ç",
+  "func": "ccedil",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ć",
+  "func": "cacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "č",
+  "func": "ccaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ď",
+  "func": "dcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ð",
+  "func": "eth",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "è",
+  "func": "egrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "é",
+  "func": "eacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ê",
+  "func": "ecirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ë",
+  "func": "euml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ę",
+  "func": "eogon",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ě",
+  "func": "ecaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ì",
+  "func": "igrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "í",
+  "func": "iacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "î",
+  "func": "icirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ï",
+  "func": "iuml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ł",
+  "func": "lstrok",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ń",
+  "func": "nacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ň",
+  "func": "ncaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ñ",
+  "func": "ntilde",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "œ",
+  "func": "oelig",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ő",
+  "func": "odblac",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ò",
+  "func": "ograve",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ó",
+  "func": "oacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ô",
+  "func": "ocirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "õ",
+  "func": "otilde",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ö",
+  "func": "ouml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ø",
+  "func": "oslash",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ř",
+  "func": "rcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ś",
+  "func": "sacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "š",
+  "func": "scaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ť",
+  "func": "tcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ů",
+  "func": "uring",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ű",
+  "func": "udblac",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ù",
+  "func": "ugrave",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ú",
+  "func": "uacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "û",
+  "func": "ucirc",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ü",
+  "func": "uuml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ý",
+  "func": "yacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ÿ",
+  "func": "yuml",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ź",
+  "func": "zacute",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ż",
+  "func": "zdot",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ž",
+  "func": "zcaron",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "þ",
+  "func": "thorn",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "ß",
+  "func": "szlig",
+  "category": "latin"
+ },
+ {
+  "kind": "char",
+  "input": "А",
+  "func": "cyA",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Б",
+  "func": "cyBe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "В",
+  "func": "cyVe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Г",
+  "func": "cyGhe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Д",
+  "func": "cyDe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Е",
+  "func": "cyYe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ё",
+  "func": "cyYo",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ж",
+  "func": "cyZhe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "З",
+  "func": "cyZe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "И",
+  "func": "cyI",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Й",
+  "func": "cyShI",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "К",
+  "func": "cyKa",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Л",
+  "func": "cyEl",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "М",
+  "func": "cyEm",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Н",
+  "func": "cyEn",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "О",
+  "func": "cyO",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "П",
+  "func": "cyPe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Р",
+  "func": "cyEr",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "С",
+  "func": "cyEs",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Т",
+  "func": "cyTe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "У",
+  "func": "cyU",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ф",
+  "func": "cyEf",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Х",
+  "func": "cyKha",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ц",
+  "func": "cyTse",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ч",
+  "func": "cyChe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ш",
+  "func": "cySha",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Щ",
+  "func": "cyShcha",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ъ",
+  "func": "cyYer",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ы",
+  "func": "cyYery",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ь",
+  "func": "cySoft",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Э",
+  "func": "cyE",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Ю",
+  "func": "cyYu",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Я",
+  "func": "cyYa",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "Є",
+  "func": "cyUkrYe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "а",
+  "func": "cya",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "б",
+  "func": "cybe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "в",
+  "func": "cyve",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "г",
+  "func": "cyghe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "д",
+  "func": "cyde",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "е",
+  "func": "cyye",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ё",
+  "func": "cyyo",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ж",
+  "func": "cyzhe",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "з",
+  "func": "cyze",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "и",
+  "func": "cyi",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "й",
+  "func": "cyShi",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "к",
+  "func": "cyka",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "л",
+  "func": "cyel",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "м",
+  "func": "cyem",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "н",
+  "func": "cyen",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "о",
+  "func": "cyo",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "п",
+  "func": "cype",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "р",
+  "func": "cyer",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "с",
+  "func": "cyes",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "т",
+  "func": "cyte",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "у",
+  "func": "cyu",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ф",
+  "func": "cyef",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "х",
+  "func": "cykha",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ц",
+  "func": "cytse",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ч",
+  "func": "cyche",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ш",
+  "func": "cysha",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "щ",
+  "func": "cyshcha",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ъ",
+  "func": "cyyer",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ы",
+  "func": "cyyery",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ь",
+  "func": "cysoft",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "э",
+  "func": "cye",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "ю",
+  "func": "cyyu",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "я",
+  "func": "cyya",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "char",
+  "input": "є",
+  "func": "cyUkrye",
+  "category": "cyrillic"
+ },
+ {
+  "kind": "ascii",
+  "input": "!",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "\"",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "#",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "$",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "%",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "&",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "'",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "(",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": ")",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "*",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "+",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": ",",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "-",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": ".",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "/",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "0",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "1",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "2",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "3",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "4",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "5",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "6",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "7",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "8",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "9",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": ":",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": ";",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "<",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "=",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": ">",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "?",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "@",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "A",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "B",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "C",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "D",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "E",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "F",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "G",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "H",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "I",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "J",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "K",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "L",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "M",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "N",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "O",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "P",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "Q",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "R",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "S",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "T",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "U",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "V",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "W",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "X",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "Y",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "Z",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "[",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "\\",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "]",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "^",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "_",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "`",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "a",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "b",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "c",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "d",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "e",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "f",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "g",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "h",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "i",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "j",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "k",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "l",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "m",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "n",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "o",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "p",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "q",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "r",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "s",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "t",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "u",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "v",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "w",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "x",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "y",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "z",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "{",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "|",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "}",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "ascii",
+  "input": "~",
+  "func": "",
+  "category": "ascii"
+ },
+ {
+  "kind": "escape",
+  "input": "\\\\",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "\\{",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "\\}",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "\\_",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "\\^",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "\\&",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "a b",
+  "func": "",
+  "category": "escape"
+ },
+ {
+  "kind": "escape",
+  "input": "\t",
+  "func": "",
+  "category": "escape"
+ }
+]
