@@ -38,7 +38,7 @@ your file turns into.
 
 * UTF-8 input is supported directly: `á é í ó ú ñ ü ¿ ¡ ç`, Greek and Cyrillic.
 * Classic accent macros: `\'a \`a \^a \"u \~n \c{c} \v{c} \H{o} \k{a} \r{a} \u{a} \=a \.z`.
-* `\% \& \$ \# \_ \{ \}`, `\ss \o \ae \oe \l \aa`, `\ldots`, `\S`, `\copyright`, `\euro`, `\textdegree`.
+* `\% \& \$ \# \_ \{ \}`, `\textasciicircum \textasciigrave \textbackslash`, `\ss \o \ae \oe \l \aa`, `\ldots`, `\S`, `\copyright`, `\euro`, `\textdegree`.
 * ``` `` ``` → `“`, `''` → `”`, `` ` `` → `‘`, `--` and `---` → `-`, `~` → space.
 * Characters with no CASIO glyph:
   * If an accent-free version exists, it is used instead (`ǵ` → `g`, W001).
@@ -74,8 +74,9 @@ display is split into rows as well.
 * Sets and logic: `\in \notin \ni \subset \subseteq \supset \supseteq \cup \cap \emptyset \exists \forall \neg \land \lor`.
 * Arrows: `\to \rightarrow \leftarrow \uparrow \downarrow \Rightarrow \implies \Leftrightarrow \iff` and the diagonal arrows.
 * Other: `\infty \partial \nabla \angle \perp \parallel \therefore \because \ldots \cdots \prime`,
-  `\bullet \square`, and `\% \{ \} \# \$ \&`.
-* Primes and degrees: `f'(x)` → `f′(x)` and `90^\circ` → `90°`.
+  `\bullet \square \bigcirc \blacktriangleright \blacktriangleleft \blacktriangle \blacktriangledown \blacklozenge`,
+  and `\% \{ \} \# \$ \&`.
+* Primes and degrees: `f'(x)` → `f′(x)`, `f''(x)` → `f″(x)` (one glyph), and `90^\circ` → `90°`.
 * Means and estimates: `\bar{x} \bar{y} \hat{x} \hat{y} \hat{p}` (also `\overline`/`\widehat`) map to the calculator's statistics glyphs.
 * Function names: `\sin \cos \tan \ln \exp \det …` are written as text, as on the calculator.
   `\sin x` keeps a space; `\sin(x)` does not.
@@ -110,4 +111,8 @@ display is split into rows as well.
 | `\note{title}{content}` | a collapsible NOTES strip. The content may contain paragraphs, `\\` and math. Cannot be nested |
 | `\abs{x}` | absolute value template |
 | `\diff{f}{a}`, `\diff2{f}{a}` | derivative templates evaluated at x = a |
+| `\casio{name}` | a palette symbol that has no Unicode character, by its EactMaker name without `\` and `;`: `\casio{i}` (imaginary unit), `\casio{s10}` (×10 exponent), `\casio{negB}`. The names are in [CHARMAP.md](CHARMAP.md) |
 | `\raw{7F 50}` | insert raw calculator bytes (for glyphs with no LaTeX name; see [CHARMAP.md](CHARMAP.md)) |
+
+`eact dump --as latex` writes these extensions, and its preamble defines them, so its output also
+compiles with LaTeX. See [LATEX_OUTPUT.md](LATEX_OUTPUT.md).

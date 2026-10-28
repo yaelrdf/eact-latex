@@ -14,7 +14,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-from . import decoder, eam, encoder, latex, preview
+from . import decoder, eam, encoder, latex, latex_writer, preview
 from .diagnostics import Reporter
 from .ir import Doc, Note, TextLine
 
@@ -117,6 +117,15 @@ def build(doc: Doc, fmt: str = "g2e") -> bytes:
     if fmt not in FORMATS:
         raise ValueError(f"format must be one of {FORMATS}")
     return encoder.encode_doc(doc, fmt)
+
+
+def to_latex(doc: Doc, rep: Reporter | None = None, standalone: bool = True, source: str = "") -> str:
+    """LaTeX for a document (the inverse of loading a .tex file).
+
+    ``standalone=False`` gives only the body, without preamble or
+    ``\\begin{document}``.  Approximations are reported to ``rep`` (W009).
+    """
+    return latex_writer.write(doc, rep, standalone, source)
 
 
 def stats(doc: Doc, data: bytes | None = None) -> dict:

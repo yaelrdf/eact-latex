@@ -5,7 +5,8 @@ This is the markup used by the [EactMaker](https://tools.planet-casio.com/EactMa
 
 * open EactMaker projects (`eact build project.eam`) and get byte-identical output;
 * see the exact low-level form of a LaTeX conversion (`eact check --eam file.tex`);
-* decode any `.g2e` back to editable text (`eact dump file.g2e`).
+* decode any `.g2e` back to editable text (`eact dump file.g2e`). For LaTeX instead, use
+  `eact dump file.g2e --as latex` ([LATEX_OUTPUT.md](LATEX_OUTPUT.md)).
 
 The markup maps **1:1 to bytes**, which makes it a precise target for tools and agents.
 

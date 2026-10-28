@@ -1,6 +1,6 @@
 # AGENTS.md: using eact from an AI agent
 
-`eact` converts LaTeX into CASIO fx-9750GIII eActivity files (`.g2e`). It is designed to be driven
+`eact` converts LaTeX into CASIO fx-9750GIII eActivity files (`.g2e`), and `.g2e` files back into LaTeX. It is designed to be driven
 in a loop by an agent: every problem is reported as a structured diagnostic with a stable code,
 a position, and a hint.
 
@@ -52,6 +52,23 @@ Exit codes: `0` ok; `1` warnings with `--strict`; `2` errors, bad input or bad u
 * Use `\note{Title}{…}` for hints or solutions that should start collapsed.
 * The title is at most 8 characters, `A–Z 0–9`; pass it with `--title`.
 
+## Going the other way: `.g2e` → LaTeX
+
+To read, edit or reuse a file that already exists, such as one made with EactMaker or on the
+calculator:
+
+```bash
+eact dump FILE.g2e --as latex -o file.tex     # a full LaTeX document
+eact dump FILE.g2e --as latex --fragment      # body only
+eact build file.tex -o FILE.g2e               # back to the calculator
+```
+
+The LaTeX uses the same commands that `eact` reads, plus `\casio{name}` for palette symbols
+with no Unicode character. W009 on stderr means a glyph was written as `\raw{…}`. Files that
+`eact` built from LaTeX come back byte-identical. For other files, see
+[docs/LATEX_OUTPUT.md](docs/LATEX_OUTPUT.md) for the small differences, such as spaces around
+operators and superscript glyphs.
+
 ## Python API
 
 ```python
@@ -61,6 +78,9 @@ for d in rep.items:
     print(d.code, d.line, d.col, d.message, d.hint)
 if not rep.errors:
     open("EX1.g2e", "wb").write(convert.build(doc))
+
+from eact import decoder
+tex = convert.to_latex(decoder.decode(open("EX1.g2e", "rb").read()))
 ```
 
 ## Reference
@@ -68,6 +88,7 @@ if not rep.errors:
 * [docs/LATEX_SUBSET.md](docs/LATEX_SUBSET.md): every supported construct
 * [docs/DIAGNOSTICS.md](docs/DIAGNOSTICS.md): every code
 * [docs/CHARMAP.md](docs/CHARMAP.md): every calculator character
+* [docs/LATEX_OUTPUT.md](docs/LATEX_OUTPUT.md): `.g2e` → LaTeX
 * [docs/FORMAT.md](docs/FORMAT.md): the binary format
 
 ## Working on the code
@@ -75,5 +96,7 @@ if not rep.errors:
 * Tests: `python3 -m unittest discover -s tests`. All of them must pass. The golden tests compare
   against real EactMaker output byte-for-byte.
 * After changing `tools/extract_charmap.py`, run it, then run `tools/gen_charmap_doc.py`.
+* `latex_writer.py` must stay the inverse of `latex.py`: any command it writes must read back to
+  the same bytes. `tests/test_latex_writer.py` checks this; add a case there for each new construct.
 * Diagnostic codes are an API: never renumber them. Add new ones to `diagnostics.CODES`
   **and** `docs/DIAGNOSTICS.md`.

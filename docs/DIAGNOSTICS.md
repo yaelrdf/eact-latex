@@ -37,6 +37,7 @@ Each diagnostic carries `file`, `line`, `col` (1-based; `0` means "whole documen
 | W006 | title adjusted | a title longer than 8 characters or with accents | uppercases, transliterates, and cuts to 8 characters |
 | W007 | tab replaced by space | a tab in `.eam` | |
 | W008 | integration variable is not x | `\int_0^1 t\,dt` | the calculator always shows `dx`. Rename the variable to keep the meaning |
+| W009 | no LaTeX form; written as `\raw` | `eact dump --as latex` meets a glyph with neither a Unicode character nor a palette name (byte `E7`) | writes `\raw{E7}`, which eact reads back exactly; LaTeX prints `[E7]` |
 
 ## Info
 
@@ -63,6 +64,9 @@ Each diagnostic carries `file`, `line`, `col` (1-based; `0` means "whole documen
   "preview": "…only with --preview…"
 }
 ```
+
+`eact dump FILE.g2e --as latex` prints its W009 warnings to stderr; `--as json` puts them in
+`latex_diagnostics`.
 
 When the input cannot be read at all (missing file, corrupt `.g2e`), the output is
 `{"ok": false, "fatal": "<reason>"}` and the exit code is 2.

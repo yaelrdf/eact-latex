@@ -14,6 +14,9 @@ It replaces the closed web tool [EactMaker](https://tools.planet-casio.com/EactM
   by AI agents (see [AGENTS.md](AGENTS.md)).
 * **Byte-exact.** Given the same markup, the output is byte-for-byte identical to EactMaker's;
   the test suite checks this.
+* **And back.** `eact dump FILE.g2e --as latex` turns any eActivity, including EactMaker and
+  calculator files, into a LaTeX document that compiles and that `eact build` turns back into the
+  same file.
 * **No dependencies.** Python ≥ 3.10, standard library only.
 
 ## Quick start
@@ -68,7 +71,7 @@ Sea $f(x) = x^3 - 2x - 5$ y $c = \frac{a+b}{2}$.
 |---|---|
 | `eact build IN.tex [-o OUT.g2e] [--title T] [--format g2e\|g1e]` | convert. Refuses to write when there are errors |
 | `eact check IN.tex [--json] [--strict] [--preview] [--eam]` | report problems only |
-| `eact dump FILE.g2e [--as eam\|preview\|json\|structure]` | decode an eActivity, including ones made by EactMaker or the calculator |
+| `eact dump FILE.g2e [--as eam\|latex\|preview\|json\|structure] [--fragment]` | decode an eActivity, including ones made by EactMaker or the calculator. `--as latex` writes a LaTeX document ([docs/LATEX_OUTPUT.md](docs/LATEX_OUTPUT.md)) |
 | `eact symbols [--latex] [--json] [--category greek]` | list every supported character and command |
 
 The input can be `.tex` (LaTeX), `.eam` (EactMaker project or markup), `.g2e`, or `-` (stdin).
@@ -77,9 +80,9 @@ Exit codes: `0` ok, `1` warnings under `--strict`, `2` errors.
 ## How it works
 
 ```
- .tex ──latex.py──┐                       ┌──encoder.py──▶ .g2e
-                  ├──▶  IR (ir.py)  ──────┤
- .eam ──eam.py────┘        ▲              └──preview.py──▶ text preview
+ .tex ──latex.py──┐                       ┌──encoder.py──────▶ .g2e
+                  ├──▶  IR (ir.py)  ──────┼──latex_writer.py─▶ .tex
+ .eam ──eam.py────┘        ▲              └──preview.py──────▶ text preview
                            └──decoder.py◀── .g2e
 ```
 
@@ -87,6 +90,7 @@ Exit codes: `0` ok, `1` warnings under `--strict`, `2` errors.
 * `charmap.py` + `data/charmap.json`: the 546-symbol CASIO character table
 * `encoder.py`/`decoder.py`: characters and 2-D structures ↔ bytes
 * `latex.py`: the LaTeX front-end, a hand-written tokenizer and parser
+* `latex_writer.py`: IR → LaTeX, the inverse of `latex.py`
 * `eam.py`: the EactMaker markup front-end and writer
 * `diagnostics.py`: diagnostic codes and the JSON report
 * `convert.py`: the high-level Python API. `cli.py` is the command line
@@ -96,6 +100,7 @@ Exit codes: `0` ok, `1` warnings under `--strict`, `2` errors.
 | Document | Contents |
 |---|---|
 | [docs/LATEX_SUBSET.md](docs/LATEX_SUBSET.md) | which LaTeX is supported and what each construct becomes |
+| [docs/LATEX_OUTPUT.md](docs/LATEX_OUTPUT.md) | `.g2e` → LaTeX: what is written, and what does not come back exactly |
 | [docs/DIAGNOSTICS.md](docs/DIAGNOSTICS.md) | every error, warning and info code, and the JSON format |
 | [docs/FORMAT.md](docs/FORMAT.md) | byte-level specification of `.g2e`/`.g1e` eActivity files |
 | [docs/CHARMAP.md](docs/CHARMAP.md) | the calculator character table (generated) |
@@ -109,6 +114,8 @@ Exit codes: `0` ok, `1` warnings under `--strict`, `2` errors.
 |---|---|
 | G2E container, characters, all EactMaker structures, notes | ✅ byte-identical to EactMaker (golden tests) |
 | Round trip `.g2e → .eam → .g2e` | ✅ lossless on every fixture |
+| Round trip `.g2e → .tex → .g2e` | ✅ byte-identical for files built from LaTeX and for most EactMaker fixtures; known differences are listed in LATEX_OUTPUT.md |
+| LaTeX written by `dump --as latex`, compiled with a TeX engine | ⏳ not tested yet (no TeX installation was available) |
 | LaTeX front-end | ✅ unit-tested; see LATEX_SUBSET.md for its limits |
 | Files built by `eact` from LaTeX, checked on a real fx-9750GIII | ⏳ **pending**: the bytes use only constructs verified against EactMaker, but a hardware check is still to do |
 | G1E | ⚠️ header verified; not tested on hardware |
@@ -117,7 +124,7 @@ Exit codes: `0` ok, `1` warnings under `--strict`, `2` errors.
 ## Development
 
 ```bash
-python3 -m unittest discover -s tests     # 39 tests, ~2 s
+python3 -m unittest discover -s tests     # 51 tests, ~3 s
 python3 tools/extract_charmap.py          # regenerate the charmap from the probe fixture
 python3 tools/gen_charmap_doc.py          # regenerate docs/CHARMAP.md
 python3 tools/bmp2png.py shot.bmp         # convert calculator screen captures

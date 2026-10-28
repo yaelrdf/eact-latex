@@ -58,6 +58,8 @@ SYMBOLS = {
     "lbrace": "{", "rbrace": "}", "bullet": "●", "square": "□", "blacksquare": "■",
     "Box": "□", "diamond": "◇", "lozenge": "◇", "S": "§", "copyright": "©", "pounds": "£",
     "euro": "€", "yen": "¥", "cent": "¢", "imath": "i", "jmath": "j",
+    "blacktriangleright": "▶", "blacktriangleleft": "◀", "blacktriangle": "▲",
+    "blacktriangledown": "▼", "bigcirc": "○", "blacklozenge": "◆",
     "%": "%", "$": "$", "#": "#", "&": "&", "_": "_", "{": "{", "}": "}", "|": "∥",
 }
 
@@ -101,7 +103,7 @@ TEXT_SYMBOLS = {
     "euro": "€", "textdegree": "°", "degree": "°", "textquestiondown": "¿", "textexclamdown": "¡",
     "ss": "ß", "o": "ø", "O": "Ø", "ae": "æ", "AE": "Æ", "oe": "œ", "OE": "Œ", "l": "ł",
     "L": "Ł", "aa": "å", "AA": "Å", "i": "i", "j": "j", "textasciitilde": "~",
-    "textasciicircum": "^", "textbar": "|", "textless": "<", "textgreater": ">",
+    "textasciicircum": "^", "textasciigrave": "`", "textbar": "|", "textless": "<", "textgreater": ">",
     "LaTeX": "LaTeX", "TeX": "TeX", "textendash": "-", "textemdash": "-", "textbullet": "●",
     "guillemotleft": "«", "guillemotright": "»", "textquotedblleft": "“", "textquotedblright": "”",
 }
@@ -629,6 +631,9 @@ class LatexParser:
         if name == "raw":
             self.add(self.raw(t, end), t.pos)
             return
+        if name == "casio":
+            self.add(self.casio(t, end), t.pos)
+            return
         if name in ("abs", "diff"):
             self.diag("E007", f"\\{name} is a math command; put it inside $…$", t.pos)
             return
@@ -909,6 +914,9 @@ class LatexParser:
                 return []
             if c == "~":
                 return [self.space()]
+            if c == "'" and self.is_char(self.i, "'"):
+                self.i += 1
+                return self.chars("″", t.pos)   # f'' -> f″ (one glyph)
             return self.char(c, t.pos, math=True)
         self.i += 1
         return self.math_command(t, end)
@@ -1076,6 +1084,8 @@ class LatexParser:
             return [Diff(self.math_range(*a), self.math_range(*b), order)]
         if name == "raw":
             return self.raw(t, end)
+        if name == "casio":
+            return self.casio(t, end)
         if name in ("label", "tag", "tag*"):
             self.read_group(end)
             return []
@@ -1106,6 +1116,20 @@ class LatexParser:
         except ValueError:
             self.diag("E006", f"\\raw{{{text}}} is not a hex byte sequence", t.pos)
             return []
+
+    def casio(self, t, end) -> list[Node]:
+        """\\casio{name}: the palette symbol EactMaker writes \\name; (eact extension)."""
+        g = self.read_group(end, "\\casio")
+        if g is None:
+            self.diag("E003", "\\casio needs {symbol name}", t.pos, "for example \\casio{i}")
+            return []
+        name = self.raw_text(*g).strip()
+        sym = self.cmap.func(name)
+        if sym is None:
+            self.diag("E001", f"unknown CASIO symbol \\casio{{{name}}}", t.pos,
+                      "`eact symbols` lists the names, written \\name; in the eam column")
+            return []
+        return [Char(sym.code, f"\\{name};")]
 
     def log(self, t, end) -> list[Node]:
         self.skip_ws(end)
@@ -1344,7 +1368,7 @@ class LatexParser:
 def suggest(name: str) -> str:
     known = (set(GREEK) | set(SYMBOLS) | set(LOOKALIKES) | FUNCTIONS | LIMIT_FUNCTIONS
              | {"frac", "sqrt", "sum", "int", "log", "left", "right", "begin", "end", "text",
-                "abs", "diff", "note", "raw", "section", "subsection", "item", "textbf", "emph"}
+                "abs", "diff", "note", "raw", "casio", "section", "subsection", "item", "textbf", "emph"}
              | set(TEXT_SYMBOLS))
     close = difflib.get_close_matches(name, sorted(known), n=3, cutoff=0.75)
     if close:

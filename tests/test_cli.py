@@ -60,6 +60,21 @@ class TestCLI(unittest.TestCase):
             self.assertEqual(r.returncode, 0, r.stderr)
             self.assertEqual(out.read_bytes(), (FIX / "TEST.g2e").read_bytes())
 
+    def test_dump_latex_round_trip(self):
+        with tempfile.TemporaryDirectory() as d:
+            src, tex, back = Path(d) / "A.g2e", Path(d) / "a.tex", Path(d) / "B.g2e"
+            r = run("build", "-", "--title", "A", "-o", str(src),
+                    stdin="Sea $x = \\frac{1}{2}$.\n\\note{N}{$\\sqrt{2}$}")
+            self.assertEqual(r.returncode, 0, r.stderr)
+            r = run("dump", str(src), "--as", "latex", "-o", str(tex))
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertIn("\\begin{document}", tex.read_text(encoding="utf-8"))
+            r = run("build", str(tex), "-o", str(back))
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertEqual(back.read_bytes(), src.read_bytes())
+            r = run("dump", str(src), "--as", "latex", "--fragment")
+            self.assertEqual(r.stdout.split("\n")[0], "Sea $x=\\frac{1}{2}$.")
+
     def test_symbols_json(self):
         r = run("symbols", "--json")
         table = json.loads(r.stdout)

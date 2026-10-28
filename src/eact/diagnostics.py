@@ -32,6 +32,7 @@ CODES = {
     "W006": ("warning", "title adjusted"),
     "W007": ("warning", "tab replaced by space"),
     "W008": ("warning", "integration variable is not x"),
+    "W009": ("warning", "no LaTeX form; written as \\raw"),
     "I001": ("info", "line wider than the screen (wraps or scrolls on the calculator)"),
     "I002": ("info", "notes in G1E files are untested"),
 }

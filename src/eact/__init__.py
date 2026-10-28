@@ -1,10 +1,11 @@
-"""eact: convert LaTeX (or EactMaker markup) into CASIO eActivity files (.g2e).
+"""eact: convert LaTeX (or EactMaker markup) into CASIO eActivity files (.g2e), and back.
 
 Modules:
     container   binary file layout (.g1e/.g2e)
     charmap     CASIO character table
     ir          intermediate representation
     latex       LaTeX front-end
+    latex_writer IR -> LaTeX (eact dump --as latex)
     eam         EactMaker markup front-end / writer
     encoder     IR -> bytes
     decoder     bytes -> IR

@@ -10,10 +10,11 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
 
 from . import __version__, charmap, container, convert, decoder, eam, latex, preview
-from .diagnostics import CODES
+from .diagnostics import CODES, Reporter
 
 EXIT_OK, EXIT_STRICT, EXIT_ERROR = 0, 1, 2
 
@@ -102,11 +103,20 @@ def cmd_dump(args) -> int:
         return EXIT_ERROR
     if args.as_ == "eam":
         text = eam.write_file_text(doc) if args.project else eam.write_content(doc, "\n")
+    elif args.as_ == "latex":
+        rep = Reporter(args.input)
+        text = convert.to_latex(doc, rep, standalone=not args.fragment, source=Path(args.input).name)
+        for d in rep.items:
+            print(d.format(), file=sys.stderr)
     elif args.as_ == "preview":
         text = preview.render(doc)
     else:
+        rep = Reporter(args.input)
+        tex = convert.to_latex(doc, rep, standalone=not args.fragment, source=Path(args.input).name)
         text = json.dumps({"title": doc.title, "stats": convert.stats(doc, data),
-                           "eam": eam.write_content(doc, "\n"), "preview": preview.render(doc)},
+                           "eam": eam.write_content(doc, "\n"), "latex": tex,
+                           "latex_diagnostics": [asdict(d) for d in rep.items],
+                           "preview": preview.render(doc)},
                           ensure_ascii=False, indent=2)
     if args.output:
         Path(args.output).write_text(text, encoding="utf-8", newline="")
@@ -137,6 +147,7 @@ def symbol_table() -> dict:
                 "\\diff{f}{a}, \\diff2{f}{a}": "d/dx f |x=a template (eact extension)",
                 "\\note{title}{content}": "collapsible NOTES strip (eact extension)",
                 "\\raw{hex}": "raw bytes (eact extension)",
+                "\\casio{name}": "palette symbol \\name; with no Unicode form, e.g. \\casio{i} (eact extension)",
             },
         },
         "diagnostic_codes": {k: {"severity": v[0], "title": v[1]} for k, v in CODES.items()},
@@ -168,7 +179,7 @@ def cmd_symbols(args) -> int:
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="eact", description="LaTeX / EactMaker markup -> CASIO eActivity (.g2e)")
+    ap = argparse.ArgumentParser(prog="eact", description="LaTeX / EactMaker markup <-> CASIO eActivity (.g2e)")
     ap.add_argument("--version", action="version", version=f"eact {__version__}")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
@@ -196,8 +207,12 @@ def main(argv=None) -> int:
 
     p = sub.add_parser("dump", help="decode a .g2e/.g1e file")
     p.add_argument("input")
-    p.add_argument("--as", dest="as_", choices=["eam", "preview", "json", "structure"], default="eam")
+    p.add_argument("--as", dest="as_", choices=["eam", "latex", "preview", "json", "structure"], default="eam",
+                   help="eam: EactMaker markup (default); latex: a LaTeX document that `eact build` "
+                        "turns back into the same eActivity")
     p.add_argument("--project", action="store_true", help="with --as eam: write a full .eam project file")
+    p.add_argument("--fragment", action="store_true",
+                   help="with --as latex/json: only the document body, no preamble")
     p.add_argument("-o", "--output")
     p.set_defaults(func=cmd_dump)
 
